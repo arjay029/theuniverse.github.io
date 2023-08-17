@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+       <title>Universe</title>
+       <link rel="icon" href="earth.png">
+</head>
+<body>
+       <section class="showcase">
+              <header>
+                     <div class="toggle"></div>
+              </header>
+
+              <video src="milkyway.mp4" muted loop autoplay></video>
+
+              <div class="overlay"></div>
+
+              <div class="text">
+                     <h2>The Milky Way</h2>
+                     <p> is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+                     <a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/">Explore</a>
+              </div>
+       </section>
+<script>
+              const menuToggle = document.querySelector('.toggle')
+              const showcase = document.querySelector('.showcase')
+
+              menuToggle.addEventListener('click', () => {
+                     menuToggle.classList.toggle('active')
+                     showcase.classList.toggle('active')
+              })
+       </script>
+       </body>
+</html>

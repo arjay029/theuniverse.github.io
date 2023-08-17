@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+       <title>Universe</title>
+       <link rel="icon" href="earth.png">
+</head>
+<body>
+       <section class="showcase">
+              <header>
+                     <div class="toggle"></div>
+              </header>
+
+              <video src="moon1.mp4" muted loop autoplay></video>
+
+              <div class="overlay"></div>
+
+              <div class="text">
+                     <h2>Moon</h2>
+                     <p>is Earth's only natural satellite. Its diameter is about one-quarter of Earth's (comparable to the width of Australia),[17] making it the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet. It is larger than all known dwarf planets in the Solar System.</p>
+                     <a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/">Explore</a>
+              </div>
+       </section>
+<script>
+              const menuToggle = document.querySelector('.toggle')
+              const showcase = document.querySelector('.showcase')
+
+              menuToggle.addEventListener('click', () => {
+                     menuToggle.classList.toggle('active')
+                     showcase.classList.toggle('active')
+              })
+       </script>
+       </body>
+</html>
